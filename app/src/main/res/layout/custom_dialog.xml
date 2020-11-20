@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_stroke_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/CustomWhiteFont1"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_8sdp"
+            android:text="NO"/>
+
+        <TextView
+            android:id="@+id/errorMessageTextView"
+            style="@style/CustomBlackFont1"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Log out now?"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/okTextView"
+                style="@style/CustomBlackFont"
+                android:padding="@dimen/_10sdp"
+                android:text="OK"
+                android:background="@color/colorBlueTransparent"
+                android:textColor="@color/colorDarkGrayText"
+                android:layout_marginBottom="@dimen/_2sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="false">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBarLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llSessionDiary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="@dimen/_13sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSessionDiary"
+                    app:srcCompat="@drawable/session_icon"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+
+                <TextView
+                    android:id="@+id/tvSessionDiary"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivSessionDiary"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/session_diary"
+                    android:textSize="@dimen/_14sdp"
+                    style="@style/CustomGreyFont"/>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow1"
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorGreylight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llAssignment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="@dimen/_13sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivAssignment"
+                    app:srcCompat="@drawable/homework_icon"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+
+                <TextView
+                    android:id="@+id/tvAssignment"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivAssignment"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/homework_assignment"
+                    android:textSize="@dimen/_14sdp"
+                    style="@style/CustomGreyFont"/>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow2"
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorGreylight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.cipolat.superstateview.SuperStateView
+        android:id="@+id/superStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:imageState="@drawable/academia_empty_state"
+        app:setTitleText="@string/whoops"
+        android:visibility="visible"
+        app:setSubTitleText="@string/error_msg"
+        app:titleStyle="@style/erro_title"
+        app:subTitleStyle="@style/erro_sub_title"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stupidUserInfoLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/groupIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/user"/>
+
+        <LinearLayout
+            android:id="@+id/group_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/groupIcon"
+            android:orientation="vertical"
+            android:layout_marginRight="56dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="16dp"
+            >
+            <LinearLayout
+                android:id="@+id/group_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp">
+
+                <TextView
+                    android:id="@+id/group_type_userInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Group Type"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorSlateGray"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_name_userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorOffWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/group_admin_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp">
+
+                <TextView
+                    android:id="@+id/admin_name_userInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/participants_number_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignBottom="@+id/group_info_ll"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/participants_icon"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/user_small"
+                ></ImageView>
+            <TextView
+                android:padding="1dp"
+                android:id="@+id/participants_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

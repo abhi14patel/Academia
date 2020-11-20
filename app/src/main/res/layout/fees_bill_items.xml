@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlFeeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCheckBox"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:visibility="visible"
+                android:src="@drawable/unchecked"/>
+
+            <TextView
+                android:id="@+id/tvInvoiceTitle"
+                style="@style/CustomBlackFont1"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text=""
+                android:layout_toRightOf="@+id/ivCheckBox"
+                android:layout_toLeftOf="@+id/tvInvoiceStatus" />
+
+            <TextView
+                android:id="@+id/tvInvoiceStatus"
+                style="@style/CustomBlackFont"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/colorForPartiallyPaid"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlFeeDetail"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBillDate"
+                style="@style/CustomGreyFont1"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorDarkGrayText"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvDueDate"
+                style="@style/CustomGreyFont1"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorDarkGrayText"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llMiddle"
+            android:layout_marginTop="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTotalAmount1"
+                    style="@style/CustomBlackFont"
+                    android:gravity="left|center"
+                    android:layout_gravity="left|center"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/tvTotalAmount"
+                    style="@style/CustomBlackFont"
+                    android:gravity="left|center"
+                    android:layout_gravity="left|center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBalanceAmount1"
+                    style="@style/CustomBlackFont"
+                    android:gravity="right|center"
+                    android:layout_gravity="right|center"
+                    android:text="@string/balance_amount"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPartAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text=""
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDivider"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:text="/"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBalanceAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:text=""
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textColor="@color/colorForBalanceAmount"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivEdit"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/edit_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

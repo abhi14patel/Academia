@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/_13sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSessionDiary"
+                app:srcCompat="@drawable/session_icon"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"/>
+
+            <TextView
+                android:id="@+id/tvCourseName"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivSessionDiary"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_toLeftOf="@+id/tvCount"
+                android:text=""
+                android:maxLines="2"
+                android:gravity="left|center"
+                android:textColor="@color/colorBlack1"
+                android:textSize="@dimen/_14sdp"
+                style="@style/CustomBlackFont1"/>
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"
+                style="@style/CustomGreyFont"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorGreylight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

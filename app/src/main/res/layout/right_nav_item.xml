@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/drawerNotifIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:src="@mipmap/notifications_black_2018"
+        />
+
+        <TextView
+            android:id="@+id/drawerNotifText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer entered"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/drawerNotifIcon"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/drawerNotifTimeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer entered"
+            android:textSize="12sp"
+            android:textColor="@color/colorDarkGrayText"
+            android:layout_toRightOf="@id/drawerNotifIcon"
+            android:layout_below="@+id/drawerNotifText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+</RelativeLayout>
+</LinearLayout>

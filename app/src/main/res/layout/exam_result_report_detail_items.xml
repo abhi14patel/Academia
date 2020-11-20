@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_headerIndicator="@id/ivHeaderIndicator"
+        app:expansion_toggleOnClick="true">
+
+        <!-- HEADER -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardPersonalDetails"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/_3sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <RelativeLayout
+                android:padding="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/ivHeaderIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivArrow"
+                            app:srcCompat="@drawable/arrow_blue"
+                            android:scaleType="center"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvProgramName"
+                            android:text=""
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:maxLines="2"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack1"
+                            style="@style/CustomBlackFont1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvMarks1"
+                                    style="@style/CustomGreyFont"
+                                    android:layout_gravity="left|center"
+                                    android:gravity="left|center"
+                                    android:textColor="@color/colorGrey"
+                                    android:text="@string/obtained_max"
+                                    android:textSize="@dimen/_9sdp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMarks2"
+                                    style="@style/CustomGreyFont"
+                                    android:layout_gravity="left|bottom|center"
+                                    android:gravity="left|bottom|center"
+                                    android:textColor="@color/colorGrey"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:text="@string/marks_grades"
+                                    android:textSize="@dimen/_6sdp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvMarks"
+                                style="@style/CustomBlackFont"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textSize="@dimen/_9sdp"/>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1.10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvWeightage1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textColor="@color/colorGrey"
+                                android:text="@string/weightage"
+                                android:textSize="@dimen/_9sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvWeightage"
+                                style="@style/CustomBlackFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text=""
+                                android:textSize="@dimen/_9sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvEffectiveMarks1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textColor="@color/colorGrey"
+                                android:text="@string/effective_marks_grades"
+                                android:textSize="@dimen/_9sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvEffectiveMarks"
+                                style="@style/CustomBlackFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text=""
+                                android:textSize="@dimen/_9sdp"/>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1.10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvModerationMarks1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textColor="@color/colorGrey"
+                                android:text="@string/moderation_marks"
+                                android:textSize="@dimen/_9sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvModerationMarks"
+                                style="@style/CustomBlackFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text=""
+                                android:textSize="@dimen/_9sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- HEADER INDICATOR -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/ivHeaderIndicator"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!-- CONTENT -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:smoothScrollbar="true"
+            android:scrollbars="none"
+            android:fadeScrollbars="true">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+</LinearLayout>

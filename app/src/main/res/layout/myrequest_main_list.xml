@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBarLayout"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRequestList"
+                style="@style/CustomGreyFont"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/request_list"
+                android:paddingTop="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tvRaiseRequest"
+                style="@style/CustomGreyFont"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/raise_request"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:background="@drawable/bg_raise_request"
+                android:textSize="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/recycler_view"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFilter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_filter_red"
+        android:padding="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/bg_circle_wht"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"/>
+
+</RelativeLayout>

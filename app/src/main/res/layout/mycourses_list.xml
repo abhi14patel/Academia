@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBarLayout"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="@dimen/_12sdp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivExamDoc"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:padding="0.5dp"
+                android:background="@drawable/bg_circle_grey"
+                android:src="@drawable/result_icon" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivArrow1"
+                android:layout_toRightOf="@+id/ivExamDoc"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvProgramName"
+                    android:text=""
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack1"
+                    style="@style/CustomBlackFont1"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvBatch1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/batch"
+                            android:textColor="@color/colorGrey"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:id="@+id/tvBatch"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text=""
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llPeriod"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvPeriod1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/period"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/_10sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvPeriod"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivArrow1"
+                app:srcCompat="@drawable/ic_down_arrow1"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"/>
+
+        <include
+            layout="@layout/recycler_view"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFilter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_filter_grey"
+        android:padding="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/bg_circle_wht"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"/>
+
+</RelativeLayout>

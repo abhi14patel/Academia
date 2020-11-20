@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stupidSubInfoLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        >
+        <com.serosoft.academiassu.Widgets.CircularImage
+            android:id="@+id/participantHeadIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/user"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/sub_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/participantsLL"
+            android:layout_toStartOf="@+id/participantsLL">
+            <TextView
+                android:id="@+id/sub_info_tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Info First"
+                android:textColor="@color/colorWhite"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/sub_info_tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Info Second"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorOffWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="2dp"
+                />
+            <TextView
+                android:id="@+id/sub_info_tv_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Info Third"
+                android:textColor="@color/colorSlateGray"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/participantsLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignBottom="@+id/sub_info_ll"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/participantsEventIcon"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:src="@drawable/user_small"
+                android:padding="2dp"
+                ></ImageView>
+            <TextView
+                android:id="@+id/ParticipantsCountsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count"
+                android:textColor="@color/colorSlateGray"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/participantsEventNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

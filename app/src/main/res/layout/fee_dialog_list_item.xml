@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/feeDetailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/feeNameHead"
+                style="@style/CustomBlackFont1"
+                android:layout_toLeftOf="@+id/feeAmountTV"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:maxLines="2"
+                android:text="RECEIPT AMOUNT"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feeAmountTV"
+                style="@style/CustomBlackFont"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:text="2000"
+                android:textColor="@color/colorDarkGrayText"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feeDetailLL">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/billNumberFee"
+                    android:text="Bill No."
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/billDate_fee"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="30/09/2016"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dueDateFee"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="30/09/2016"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_11sdp"/>
+
+                <TextView
+                    android:id="@+id/remarkFee"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="Remark"
+                    android:textColor="@color/colorDarkGray"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewForPDFIcon"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@null"
+                    android:src="@drawable/pdf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

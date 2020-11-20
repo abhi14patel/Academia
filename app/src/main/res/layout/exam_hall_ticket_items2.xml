@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="false">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPersonalDetails"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvHallTicketNo1"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="top|left|center"
+                    android:gravity="top|left|center"
+                    android:text="@string/hall_ticket_number"
+                    android:textColor="@color/colorGrey"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/tvHallTicketNo"
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="top|left|center"
+                    android:gravity="top|left|center"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorLightGray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <RelativeLayout
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDocument"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/bg_circle_grey"
+                    android:src="@drawable/pdf" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivArrow1"
+                    android:layout_toRightOf="@+id/ivDocument"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack1"
+                        style="@style/CustomBlackFont1"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvBatch1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/batch"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/_8sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvBatch"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textSize="@dimen/_8sdp"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvAssessmentGroup1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/assessement_group"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/_8sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvAssessmentGroup"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textSize="@dimen/_8sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTotalOutstanding"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTotalOutstanding1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/total_outstanding1"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/_8sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvTotalOutstanding"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text=""
+                                android:textSize="@dimen/_8sdp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvPeriod1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="top|left|center"
+                                android:gravity="top|left|center"
+                                android:text="Period : "
+                                android:textColor="@color/colorGrey"
+                                android:textSize="@dimen/_8sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvPeriod"
+                                style="@style/CustomBlackFont"
+                                android:layout_gravity="top|left|center"
+                                android:gravity="top|left|center"
+                                android:layout_weight="1"
+                                android:text="Semester - 8"
+                                android:textSize="@dimen/_8sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow1"
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

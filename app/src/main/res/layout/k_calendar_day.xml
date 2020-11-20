@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exFiveDayLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@color/k_cakendar_item_view_bg_color">
+
+        <View
+            android:id="@+id/viewForTodayDot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:textColor="@color/k_cakendar_text_grey"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:background="@drawable/dot_for_today" />
+
+        <TextView
+            android:id="@+id/exFiveDayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:textColor="@color/k_cakendar_text_grey"
+            android:textSize="14sp"
+            tools:text="24" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/LLForDots"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_diameter"
+            android:layout_gravity="bottom|center"
+            android:layout_below="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewForClassDot"
+                android:layout_width="@dimen/dot_diameter"
+                android:layout_height="@dimen/dot_diameter"
+                android:layout_marginLeft="@dimen/dot_margin"
+                android:layout_marginRight="@dimen/dot_margin"
+                android:background="@drawable/dot_for_class" />
+
+            <View
+                android:id="@+id/viewForHolidayDot"
+                android:layout_width="@dimen/dot_diameter"
+                android:layout_height="@dimen/dot_diameter"
+                android:layout_marginLeft="@dimen/dot_margin"
+                android:layout_marginRight="@dimen/dot_margin"
+                android:background="@drawable/dot_for_holiday" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

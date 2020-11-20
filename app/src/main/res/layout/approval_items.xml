@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPersonalDetails"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvAssignedUser1"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/assigned_user"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvAssignedUser"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text=""
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDOA"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/tvActionType"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|right|center"
+                            android:gravity="top|right|center"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/colorLightGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"/>
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvRemark1"
+                        style="@style/CustomGreyFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:text="@string/remark"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvRemark"
+                        style="@style/CustomBlackFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:textSize="@dimen/_11sdp"
+                        android:text=""/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

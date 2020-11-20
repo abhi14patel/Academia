@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardMarksheet"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_3sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <RelativeLayout
+                android:padding="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMarksheet"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="0.5dp"
+                    android:background="@drawable/bg_circle_grey"
+                    android:src="@drawable/marksheet_icon" />
+
+                <TextView
+                    android:id="@+id/tvMarksheet"
+                    android:text="@string/marksheet"
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ivArrow1"
+                    android:layout_toRightOf="@+id/ivMarksheet"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack1"
+                    style="@style/CustomBlackFont1"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow1"
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardHallTicket"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_3sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <RelativeLayout
+                android:padding="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHallTicket"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="0.5dp"
+                    android:background="@drawable/bg_circle_grey"
+                    android:src="@drawable/hall_ticket_icon" />
+
+                <TextView
+                    android:id="@+id/tvHallTicket"
+                    android:text="@string/hall_ticket"
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ivArrow2"
+                    android:layout_toRightOf="@+id/ivHallTicket"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack1"
+                    style="@style/CustomBlackFont1"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow2"
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/empty_layout"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

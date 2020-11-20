@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlEducationDetails"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/education_details"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                style="@style/CustomBlackFont"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlWorkExperience"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/work_experience"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                style="@style/CustomBlackFont"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlExtraCurricular"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/extra_curricular"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                style="@style/CustomBlackFont"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlIdentitiesDocuments"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/identities_documents"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                style="@style/CustomBlackFont"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlDisciplinaryActions"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/disciplinary_actions"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                style="@style/CustomBlackFont"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorDarkGray"-->
+        <!--android:layout_marginLeft="95dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/dateRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewForDate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewForDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/colorBlue"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewForMonthAndYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewForDate"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Nov - 2018"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/cardview_dark_background" />
+
+
+        <TextView
+            android:id="@+id/textViewForDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/textViewForDate"
+            android:text="Wednesday"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dateRL"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewForDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="09:00 AM to 10:00 AM"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/textViewForFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Atul Kulkarni"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorDarkGray" />
+
+        <TextView
+            android:id="@+id/textViewForLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Room No. 105"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+
+</RelativeLayout>

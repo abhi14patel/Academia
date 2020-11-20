@@ -1,0 +1,555 @@
+<resources>
+    <string name="app_name">Academia Stasy</string>
+
+    <string name="exam_marks">EXAM MARKS</string>
+    <string name="resetPassword">RESET PASSWORD</string>
+    <string name="faculty">Faculty : </string>
+    <string name="documents_grp_list">Documents</string>
+    <string name="documents_title">DOCUMENTS</string>
+    <string name="description">Description</string>
+    <string name="forward_slash">/</string>
+    <string name="large_text">Molecular physics is the study of the physical properties of molecules,
+        the chemical bonds between atoms as well as the molecular dynamics.
+        Its most important experimental techniques are the various types of spectroscopy;
+        scattering is also used. The field is closely related to atomic physics and overlaps
+        greatly with theoretical chemistry, physical chemistry and chemical physics.</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="event_desc">VII B conducted a special assembly on Red Cross in the school.
+        It started with the prayer followed by the thought of the day and news.</string>
+    <string name="attendance_String">Attendance</string>
+    <string name="end_sem_exam">End Semester Exam</string>
+    <string name="end_semester">End Semester</string>
+    <string name="total">TOTAL</string>
+    <string name="percentage">Percentage</string>
+    <string name="percentage_sign">%</string>
+    <string name="grade">Grade</string>
+    <string name="result">Result</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="participants">PARTICIPANTS</string>
+    <string name="open_braces">(</string>
+    <string name="close_braces">)</string>
+    <string name="due_on">Due on</string>
+    <string name="published_date">Published Date</string>
+    <string name="attendance_grp_list">Attendance</string>
+    <string name="assignment_grp_list">Assignment</string>
+    <string name="timetable_grp_list">Timetable</string>
+    <string name="fees_grp_list">Fees</string>
+    <string name="exam_marks_grp_list">Exam Marks</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_exam_list">ExamListActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+
+    <string name="gridViewCategory">Grid View Clicked</string>
+    <string name="leftDrawer">Left Drawer Element</string>
+    <string name="backPressed">Back Pressed</string>
+    <string name="backButtonClicked">Back Button Clicked</string>
+    <string name="refreshMenu">Refresh Menu</string>
+    <string name="refreshMenuClicked">Refresh Menu Clicked</string>
+    <string name="listElement">List Element</string>
+    <string name="viewClick">UI Click</string>
+    <string name="viewSwipe">View Swipe</string>
+    <string name="photos">Photos</string>
+    <string name="photo">Photo</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="allow_all_permissions">Please allow permissions for the app.</string>
+    <string name="payTM_terms_and_conditions_title">TERMS AND CONDITIONS FOR ONLINE PAYMENTS</string>
+    <string name="payTM_terms_and_conditions_contents">These terms and conditions apply to the use of the online service for portal fees payment of university. Please read the terms and conditions carefully. You will be deemed to have accepted these terms and conditions by authorizing a payment through the online payment service. The University reserves the right to amend these terms and conditions at any time without notice. You should therefore re-read the terms and conditions each time that this service is used.
+
+\n\nPayment may only be made with Visa, MasterCard credit cards and also through your bank account, debit card or through the net-banking facility. Before using this service, enquiry should be made of the credit card provider as to the nature of any fees payable to the provider as a result of using this service. University accepts no responsibility for refusal or reversal of payments which are matters solely between the user of the service and the credit card provider. The credit card information supplied when using this service is processed by the payment gateway of the service provider and is not supplied to the university. The only information supplied to the university is the name of the payer, the invoice or notice number, part of the credit card number and the amount of the payment. It is the sole responsibility of the user of this service to ensure that the information entered in the relevant fields is correct. It is recommended that you take and retain a copy of the transaction for record keeping purposes, and to assist with the resolution of any disputes that may arise from use of this service.
+
+\n\nThis service is provided using a payment gateway service provider through a secure website. However, the university will not be able to give any assurance that information provided online by a user may not be able to be read or intercepted by a third party. The university does not accept any liability in the event of the interception, \'hacking\' or other unauthorized access to information provided by a user of this service.
+
+\n\nNo warranty, representation or guarantee, express or implied, is given by the university in respect of the operation of this service. It is Sole responsibility of the payer and payment gathering of service provider about any disputes that may be arise after use of this service.
+
+\n\nThe university enables users to pay portal fee online through portal. Online Services are provided through a secure website using our Service Provider payment gateway. All such Online Services shall be subject to these Terms and Conditions for Online Services, and the Terms of Use of ERP (Academia) portal, which are incorporated herein by reference.
+
+\n\nOnline fee payment service offered by ERP (Academia) portal require verified access for verification of your identity (e.g your card number and password on the payment gateway). You agree that all information provided by you on the payment gateway in relation to online services shall be current, complete and accurate. You agree to comply with all such terms and conditions in respect of your use of Online Services.
+
+\n\nERP (Academia) portal shall be entitled at any time without prior notice or any liability to you, to cancel or suspend the Online portal fee payment services and/or to substitute alternative services, which may or may not be interactive or transactional in nature.
+
+
+\n\nONLINE PORTAL FEE PAYMENT:
+
+\n\nAN OVERVIEW:
+
+\n\nTo pay the university portal fees Online, you are required to login on the college\'s ERP (Academia) portal through the website or through the ERP (Academia)portal app your Username and Password provided by the college.
+
+\n\nYou will be directed to a payment gateway where you will be asked to choose the payment mode- Net-banking/Credit/Debit card. Afterwards kindly enter your Net banking/Credit/Debit card details and follow the mandatory procedure. Your payment will be authenticated over the gateway and your credit card or your bank account will be instantly debited.
+
+\n\nYou will receive a Transaction Reference Number that is an acknowledgement for your payment request.
+
+\n\nWhile availing any of the payment method/s offered by us, we are not responsible or take no liability of whatsoever nature in respect of any loss or damage arising directly or indirectly to you out of the decline due to:
+
+\n\n• Lack of authorization for any transaction/s,
+\n• Exceeding the preset limit mutually agreed by you and between your \'Bank/s\',
+\n• Any payment issues arising out of the transaction, decline of transaction for any other reason/s.
+
+\n\nAll payments made against the portal fees shall be compulsorily in Indian Rupees acceptable by the Union of India. The university does not accept any other form of currency with respect to the payments. Payments can be made by Master/Visa card.
+
+
+\n\nREFUND POLICY:
+
+\n\nSports Gurukul LLP believes in helping its customers as far as possible and has therefore a liberal refund policy. Under this policy:
+
+\n\nIn case you feel that the services received are not as shown on the ERP site or as per your expectations, you must bring it to the notice of our customer service within 24 hours of receiving the services. The Customer Service Team after looking into your complaint will take an appropriate decision.
+
+\n\nTo request a refund, simply contact us with your order details and transaction ID within ninety (90) days of your order. Optionally tell us why you’re requesting a refund – we take customer feedback very seriously and use it to constantly improve our products and quality of services. Refunds are being processed within 21 days period and with Online Mode only. Refund will be paid only to the account from which the original payment was made.
+
+
+\n\nDISCLAIMER AND LIMITATIONS OF LIABILITY POLICY:
+
+\n\nNo warranty, representation or guarantee, express or implied, is given neither by the University or Sports Gurukul LLP in respect of the operation of this service. It is Sole responsibility of the payer and payment gathering of service provider about any disputes that may be arise after use of this service.
+
+\n\nUniversity and Sports Gurukul LLP does not accept liability for any damage, loss, cost (including legal costs), expenses, indirect losses or consequential damage of any kind which may be suffered or incurred from the use of this service.
+
+\n\nNeither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this ERP for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
+
+\n\nYour use of any information or materials on this ERP is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this ERP meet your specific requirements.
+
+\n\nThis ERP contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
+
+\n\nAll trademarks reproduced in this ERP which are not the property of, or licensed to, the operator are acknowledged on the ERP.
+
+\n\nUnauthorized use of this ERP may give rise to a claim for damages and/or be a criminal offence.
+
+\n\nFrom time to time this ERP may also include links to other products. These links are provided for your convenience to provide further information. They do not signify that we endorse the ERP(s). We have no responsibility for the content of the linked product(s).
+
+\n\nYou may not create a link to this ERP from another ERP or document without Sports Gurukul LLP prior written consent.
+
+\n\nYour use of this ERP and any dispute arising out of such use of the ERP is subject to the laws of India or other regulatory authority.
+
+\n\nWe as a merchant shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time.
+
+\n\nIn no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arise out of, or in connection with, the use of this ERP.
+
+\n\nEvery effort is made to keep the ERP up and running smoothly. However, we take no responsibility for, and will not be liable for, the ERP being temporarily unavailable due to technical issues beyond our control.
+
+\n\nThe above disclaimer and limitation of liability operates only to the extent permitted by law.
+
+\n\nGOVERNING LAW:
+
+\n\nUse of this ERP (Academia) portal and subsidiary websites and these terms shall be governed by the laws of India without reference to principles of conflict of laws. You agree to be bound by such laws and irrevocably agree to submit to the jurisdiction of the courts of India in connection with the interpretation or application of these terms. Those who choose to access this ERP website and subsidiary websites from other locations do so on their own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable.
+
+\n\nPRIVACY POLICY:
+
+\n\n1. General: The University enables users to pay portal fee online through ERP (Academia) portal. Online Services are provided through a secure website using Payu Money payment gateway. All such Online Services shall be subject to these Terms and Conditions for Online Services, and the Terms of Use of the ERP (Academia) portal, which are incorporated herein by reference.
+
+\n\n2. Use of Online Services:  University Online Services available for portal fee payment only. Please do not modify the information or make it available to third parties through a networked computer environment and do not make any additional representations or warranties regarding the information.
+
+\n\n3. Information: You hereby authorize ERP (Academia) portal to collect information about you (including information about transactions processed by you) from time to time through the ERP (Academia) portal. Any such information collected shall be treated in accordance with the university privacy Policy. The university may disclose information about you (including your identity) to a third party if necessary to carry out the Online Services, if The university requested to do so in the course of a criminal or other legal investigation, or if The university determines that disclosure is necessary in connection with any complaint regarding your use of the site.
+
+\n\n4. Consent for us to receive and store information in electronic form:  Use of these services means that you agree to provide information through electronic means. This means you agree to provide any relevant information, documents and attachments in the format and to the standards described for each transaction. It also means you agree and understand that the information will be retained in electronic form.
+
+\n\n5. Consent for us to provide you with information in electronic form:  Use of these services means that you agree to receive information through electronic means. Where information is requested by another person, the requesting party is deemed to be the recipient\'s agent and is presumed to have obtained the consent of the recipient to receive the information in electronic format.
+
+\n\n6. Registered users:  Online portal fee payment service offered by ERP (Academia) portal require verified access for verification of your identity (e.g your card number and password on the payment gateway). You agree that all information provided by you on the payment gateway in relation to online services shall be current, complete and accurate. You agree to comply with all such terms and conditions in respect of your use of Online Services.
+
+\n\n7. Password Security:  We recommend the password you select should not relate to any readily accessible data such as your name, birth date, address, telephone number, driver\'s license, license plate or passport. Nor may it be an obvious combination of letters and numbers, including sequential or same numbers or letters. You are entirely responsible for maintaining the security of your login ID and password, and for all activity which occurs on or through your account, and, through you credit card, whether authorized or unauthorized, including you, or any of your known entity. You should change your password immediately if you believe that your login ID and password have been used without authorization. ERP (Academia) portal shall not have any liability for your failure to comply with these obligations.
+
+\n\n8. Security: Online Services are provided through a secure Payu Money payment gateway. However, you acknowledge and agree that Internet transmissions are never entirely secure or private, and that any message or information you send to or through the website (including credit card information) may be read or intercepted by others, even where a website is stated as being secure. ERP (Academia) portal shall have no liability for the interception or \'hacking\' of data through the website by unauthorized third parties.
+
+\n\n9. Accuracy and binding nature of the Transaction Information: Upon completing an Online Service, you will be presented with a confirmation screen verifying the transaction details you wish to process. It is your responsibility to verify that all transaction information and other details are correct. The transaction shall be deemed binding at the time the confirmation screen is displayed. You should print the transaction confirmation for future reference and your files. ERP (Academia) portal shall have no liability for transactions which are incorrect as a result of inaccurate data entry in the course of providing Online Services or for loss of data or information caused by factors outside of ERP (Academia) portal\'s control.
+
+\n\n10. Right to suspend, alter or cancel service: ERP (Academia) portal shall be entitled at any time without prior notice or any liability to you, to cancel or suspend the online fee payment services and/or to substitute alternative services, which may or may not be interactive or transactional in nature.
+
+\n\nThis privacy policy sets out how Sports Gurukul LLP uses and protects any information that you give Sports Gurukul LLP when you use this ERP.
+Sports Gurukul LLP is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this ERP, and then you can be assured that it will only be used in accordance with this privacy statement.
+Sports Gurukul LLP may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from 01/06/2019.
+
+\n\nWHAT WE COLLECT:
+
+\n\nWe may collect the following information:
+\n• name
+\n• contact information including email address
+\n• demographic information such as postcode, preferences and interests
+\n• other information relevant to ERP usage
+
+\n\nWhat we do with the information we gather:
+
+\n\nWe require this information to understand your needs and provide you with a better service, and in particular for the following reasons -
+
+\n\n• Internal record keeping.
+\n• We may use the information to improve our products and services.
+\n• We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided.
+\n• From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customize the ERP according to your interests.</string>
+
+    <!--Module Names-->
+    <string name="my_courses">MY COURSES</string>
+    <string name="attendance">ATTENDANCE</string>
+    <string name="fees">FEES</string>
+    <string name="assignments">ASSIGNMENTS</string>
+    <string name="results">RESULTS</string>
+    <string name="events">EVENTS</string>
+    <string name="timetable">TIMETABLE</string>
+    <string name="circular">CIRCULARS</string>
+    <string name="gallery">GALLERY</string>
+    <string name="academia_drive">ACADEMIA DRIVE</string>
+
+    <string name="permission_msg">These permissions are mandatory for the application. Please allow access</string>
+    <string name="error_msg">Kindly contact admin \nto get access to the application</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="circular_details">Circular Details</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_details">Notification Details</string>
+
+    <!--Drawer Menu-->
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_request">My Request</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="share_app">Share App</string>
+    <string name="switch_student">Switch Student</string>
+    <string name="rate_n_review">Rate &amp; Review Application</string>
+    <string name="leave_a_feedback">Leave a Feedback</string>
+    <string name="logout">Logout</string>
+
+    <!--Error Messages-->
+    <string name="oops">OOPS!</string>
+    <string name="info">Info</string>
+    <string name="versioning_api_data_not_set">Versioning API data not set!</string>
+    <string name="network_error">Network Error</string>
+    <string name="please_check_your_network_connection">Please Check Your Network Connection</string>
+    <string name="unexpected_error">Unexpected Server Error!</string>
+    <string name="user_not_found">User not found!</string>
+    <string name="no_events_found">No Details Found!</string>
+    <string name="wrong_credentials">Wrong Credentials or Server Error!</string>
+    <string name="permission_for_submodule_not_set">Permissions not set for submodules!</string>
+    <string name="all_invoices_are_paid_in_full">You have no pending invoices!</string>
+    <string name="no_invoices_due">No Invoices Due!</string>
+    <string name="no_invoices_paid">No Invoices Paid!</string>
+    <string name="please_select_at_least_one_invoice">Please select at least one invoice!</string>
+    <string name="payment_settings_not_configured_kindly_contact_the_admin">Payment settings not configured. Kindly contact the admin</string>
+    <string name="no_records_found">No records found</string>
+    <string name="no_details_found">No details found!</string>
+    <string name="you_cannot_payment">Only the Bills generated in INR can be selected for payment!</string>
+    <string name="can_not_upload_document">Can\'t upload document more than 20 MB</string>
+    <string name="something_went_wrong">Something went wrong, Please try again</string>
+    <string name="please_upload_a_file_first">Please upload a file first</string>
+    <string name="amount_entered_cannot_be_greater_than_the_balance_amount">Amount entered cannot be greater than the Balance Amount!</string>
+    <string name="cant_get_image">Cant get image</string>
+    <string name="cant_take_image">Cant take image</string>
+    <string name="share_app_content">Hey there! You’re one click away from always staying updated with your institute, Download the app now and never miss any updates!</string>
+    <string name="whoops">Whoops!</string>
+
+    <!--Assignment Screens-->
+    <string name="homework_assignment">Homework Assignment</string>
+    <string name="session_diary">Session Diary</string>
+    <string name="session_number">Session No.</string>
+    <string name="assignment_name">Assignment Name</string>
+    <string name="course_variant">Course Variant</string>
+    <string name="given_on">Given On</string>
+    <string name="date_of_assignment">Date of Assignment</string>
+    <string name="extended_deadline">Extended Deadline</string>
+    <string name="faculty1">Faculty</string>
+    <string name="description1">Description</string>
+    <string name="attachment">Attachment</string>
+    <string name="attachments">Attachments</string>
+    <string name="download">Download</string>
+    <string name="course_code_name">Course Code/Name</string>
+    <string name="session_date">Session Date</string>
+    <string name="time_slot">Time Slot</string>
+    <string name="topics">Topics</string>
+    <string name="status">Status</string>
+    <string name="submit">Submit</string>
+    <string name="you_cannot_submit_this_assignment">You can\'t submit this as the deadline is passed</string>
+    <string name="pending">Pending</string>
+    <string name="saved">Drafted</string>
+    <string name="completed">Completed</string>
+    <string name="submitted">Submitted</string>
+    <string name="reSubmitted">ReSubmitted</string>
+    <string name="click_here_to_upload_assignment">Click Here to Upload Assignment</string>
+    <string name="browse_files">Browse files</string>
+    <string name="submit_assignment">Submit Assignment</string>
+    <string name="you_can_upload_file_up_to_20_mb_supported_file_formats_png_jpeg_pdf_doc_xls">You can upload file up to 20 MB. Supported file formats PNG,JPEG,PDF,DOC,XLS</string>
+    <string name="save_as_draft">Save as draft</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="please_give_permission">Please give permission</string>
+    <string name="you_have_already_submitted_this_assignment">You have already submitted this assignment</string>
+
+    <!--Attendance-->
+    <string name="session_wise">SESSION WISE</string>
+    <string name="program_wise">PROGRAM WISE</string>
+    <string name="course_wise">COURSE WISE</string>
+    <string name="day_wise">Day Wise</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="other">Other</string>
+    <string name="total_classes">Total Classes</string>
+    <string name="overall">Overall</string>
+    <string name="this_month">This Month</string>
+    <string name="attendance_course_variant">Course Variant</string>
+    <string name="attendance_course_code_name">Course Code/Name</string>
+    <string name="attendance_percentage">Attendance Percentage</string>
+
+    <!--Events-->
+    <string name="event_description">Event Description</string>
+    <string name="event_venue">Venue</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="event_admin">Event Admin</string>
+
+    <!--MyProfile-->
+    <string name="user_name">User Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="admission_id">Admission ID</string>
+    <string name="email_id">Email ID</string>
+    <string name="contact_1">Contact 1</string>
+    <string name="contact_2">Contact 2</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="date_of_joining">Date of Joining</string>
+    <string name="date_of_registration">Date of Registration</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="category">Category</string>
+    <string name="gender">Gender</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="religion">Religion</string>
+    <string name="caste">Caste</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="parents_details">Parent Details</string>
+    <string name="documents">Documents</string>
+    <string name="fee_payers">Fee Payer Details</string>
+    <string name="education_details">Education Details</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="extra_curricular">Extra Curricular</string>
+    <string name="identities_documents">Identities Documents</string>
+    <string name="disciplinary_actions">Disciplinary Actions</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="student_past_history">Student Past History</string>
+    <string name="consulting_doctor">Consulting Doctor</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="medical_condition">Medical Condition</string>
+    <string name="disciplinary_action">Disciplinary Actions</string>
+    <string name="medical_conditions">Medical Conditions</string>
+    <string name="precuation_medication">Precuation/Medication</string>
+    <string name="condition_type">Condition Type</string>
+    <string name="since">Since</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="other_information">Other Information</string>
+    <string name="contact_details">Contact Details</string>
+
+    <!--OptionMenu-->
+    <string name="refresh">Refresh</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="notification">Notification</string>
+
+    <!--Fees-->
+    <string name="total_outstanding">Total Outstanding</string>
+    <string name="receipt">Receipt</string>
+    <string name="receipt_number">Receipt Number</string>
+    <string name="receipt_date">Receipt Date</string>
+    <string name="bill">Bill</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="balance_amount">Balance Amount</string>
+    <string name="discount_amount">Discount Amount</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="due_date">Due Date</string>
+    <string name="bill_number">Bill No.</string>
+    <string name="pay">PAY</string>
+    <string name="billed">Billed</string>
+    <string name="invoice">Invoice</string>
+    <string name="show">Show</string>
+    <string name="all">All</string>
+    <string name="due">Due</string>
+    <string name="paid">Paid</string>
+    <string name="fully_pending">Fully Pending</string>
+    <string name="partially_settled">Partially Settled</string>
+    <string name="partially_paid">Partially Paid</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="amount_to_pay">Amount to Pay</string>
+    <string name="amount_settled">Amount Settled</string>
+    <string name="course_wise1">Course Wise</string>
+    <string name="select_all">Select All</string>
+    <string name="course_code">Course Code</string>
+    <string name="enter_amount">Enter Amount</string>
+
+    <!--Reset Password-->
+    <string name="powered_by">Powered by</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="current_old_password_not_match">Current old password does not match</string>
+    <string name="confirm_password_does_not_match">New password and Confirm password do not match</string>
+    <string name="your_password_has_already_been_used">Your password has already been used, please choose another</string>
+    <string name="your_password_must_different_from_old_username_password">Your password must be different from your old password &amp; username.</string>
+    <string name="your_password_must_different_from_username">Your password must be different from your username.</string>
+    <string name="your_password_must_different_from_password">Your password must be different from your old password.</string>
+
+    <!--Time Table-->
+    <string name="classes_scheduled">Classes Scheduled</string>
+    <string name="holiday">Holiday</string>
+    <string name="courses">Courses</string>
+
+    <string name="academia_info">ACADEMIA_INFO</string>
+    <string name="student_name">Student Name</string>
+    <string name="admission_date">Admission Date</string>
+    <string name="caste_category">Caste Category</string>
+
+    <!--Document Screen-->
+    <string name="document_name">Document Name</string>
+    <string name="submission_date">Submission Date</string>
+    <string name="return_date">Return Date</string>
+    <string name="inspection_date">Inspection Date</string>
+    <string name="program">Program</string>
+    <string name="seat_type">Seat Type</string>
+    <string name="remark">Remark</string>
+    <string name="select_file">Select File</string>
+    <string name="document_type">Document Type</string>
+    <string name="predefined_documents">Predefined Documents</string>
+    <string name="others">Others</string>
+
+    <!--Exam Result-->
+    <string name="filter_by">Filter by</string>
+    <string name="batch">Batch</string>
+    <string name="period">Period</string>
+    <string name="apply">Apply</string>
+    <string name="hall_ticket">Hall Ticket</string>
+    <string name="hall_ticket_number">Hall Ticket No.</string>
+    <string name="exam_result">Exam Result</string>
+    <string name="download_marksheet">Download Marksheet</string>
+    <string name="marksheet">Marksheet</string>
+    <string name="assessement_group">Assessement Group</string>
+    <string name="total_outstanding1">Total Outstanding</string>
+    <string name="section">Section</string>
+    <string name="obtained_max">Obtained / Max</string>
+    <string name="obtained">Obtained</string>
+    <string name="max">Max</string>
+    <string name="tap_on_an_invoice_to_select">Tap on an invoice to select.</string>
+    <string name="result_not_yet_published">Result not \n  yet published!</string>
+    <string name="weightage">Weightage</string>
+    <string name="effective_marks_grades">Effective Marks/Grades</string>
+    <string name="moderation_marks">Moderation Marks</string>
+    <string name="marks_grades">(Marks/Grades)</string>
+    <string name="result_report">Result Report</string>
+    <string name="exam_docs">Exam Docs</string>
+
+    <!--Login Screen-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="send">Send</string>
+    <string name="enter_your_username">Enter your username</string>
+
+    <!--Parent Screen-->
+    <string name="user_code">User Code</string>
+    <string name="father_detail">Father Details</string>
+    <string name="mother_detail">Mother Details</string>
+    <string name="guardian_detail">Guardian Details</string>
+    <string name="local_guardian_detail">Local Guardian Details</string>
+    <string name="visitor_details">Visitor Details</string>
+    <string name="add_new">Add New +</string>
+    <string name="visitor1">Visitor - 1</string>
+    <string name="visitor2">Visitor - 2</string>
+    <string name="visitor3">Visitor - 3</string>
+    <string name="visitor4">Visitor - 4</string>
+
+    <string name="assignment_type">Assignment Type</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="reset">Reset</string>
+
+    <!--Academia Drive-->
+    <string name="media_file">Media File</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_date">Sort by date</string>
+
+    <!--MyCourses-->
+    <string name="timetable1">Timetable</string>
+    <string name="attendance1">Attendance</string>
+
+    <!--MyRequest-->
+    <string name="request_list">Request List</string>
+    <string name="raise_request">Raise Request</string>
+    <string name="request_id">Request ID</string>
+    <string name="request_by">Request By</string>
+    <string name="request_type">Request Type</string>
+    <string name="request_assigned_to">Request Assigned To</string>
+    <string name="service_request_status">Service Request Status</string>
+    <string name="request_category">Request Category</string>
+    <string name="leave_request_from">Leave Request From</string>
+    <string name="leave_request_to">Leave Request To</string>
+    <string name="mandatory_documents">Mandatory Documents</string>
+    <string name="voluntary_documents">Voluntary Documents</string>
+    <string name="comments">Comments</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="follow_up_details">Follow Up Details</string>
+    <string name="approval_details">Approval Details</string>
+    <string name="execution_details">Execution Details</string>
+    <string name="entered_by">Entered By</string>
+    <string name="request_date">Request Date</string>
+    <string name="request_reason_remark">Request Reason/Remark</string>
+    <string name="academy_location">Academy Location</string>
+    <string name="name">Name</string>
+    <string name="planned_follow_up_date">Planned Follow Up Date</string>
+    <string name="actual_follow_up_date">Actual Follow Up Date</string>
+    <string name="next_follow_up_date">Next Follow Up Date</string>
+    <string name="action_taken_by">Action Taken By</string>
+    <string name="assigned_user">Assigned To</string>
+    <string name="action_type">Action Type</string>
+    <string name="requester_name">Requester Name</string>
+    <string name="requester_details">Requester Details</string>
+    <string name="mode_of_submission">Mode of Submission</string>
+    <string name="certificate_handover_date">Certificate Handover Date</string>
+    <string name="closure_reason">Closure Reason</string>
+    <string name="closure_remark">Closure Remark</string>
+    <string name="certificate_name">Certificate Name</string>
+    <string name="download_certificate">Download Certificate</string>
+
+    <!--Disciplinary Action-->
+    <string name="type_of_incident">Type of incident</string>
+    <string name="date_of_incident">Date of incident</string>
+    <string name="date_of_action">Date of Action</string>
+    <string name="action_taken">Action Taken</string>
+    <string name="reported_by">Reported By</string>
+    <string name="reporter_name">Reporter Name</string>
+    <string name="incident_details">Incident Details</string>
+    <string name="document_uploaded">Document Uploaded</string>
+
+    <!--Fee Payer-->
+    <string name="fee_payer_type">Fee Payer Type</string>
+    <string name="fee_payer_name">Fee Payer Name</string>
+    <string name="telephone_work">Telephone (Work)</string>
+    <string name="consent_to_check_credit">Consent to check credit</string>
+    <string name="employee_of_the_organization">Employee of the organization</string>
+    <string name="employee_id">Employee Id</string>
+    <string name="title">Title</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="name_of_company">Name of Company</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="does_fee_payer_consent_to_credit_check">Does Fee Payer consent to credit check?</string>
+    <string name="same_as_student_current_address">Same as Student Current Address</string>
+    <string name="country">Country</string>
+    <string name="country_region">Country Region</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="telephone_home">Telephone (Home)</string>
+    <string name="national_id_alternate_id">National ID/Alternate ID</string>
+    <string name="email_home">Email (Home)</string>
+    <string name="use_this_for_communication">Use This for Communication?</string>
+    <string name="email_work">Email (Work)</string>
+    <string name="company_address">Company Address</string>
+    <string name="payment_option_details">Payment Option Details</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="dabit_order_date">Dabit Order Date</string>
+    <string name="account_type">Account Type</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_name">Account Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="fee_payer_id">Fee Payer ID</string>
+    <string name="fee_payer_latest_payslip">Fee Payer Latest Payslip</string>
+
+</resources>

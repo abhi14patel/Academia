@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardPersonalDetails"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="visible"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPersonalDetails1"
+                            android:text="@string/personal_details"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardAddress"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvAddress1"
+                            android:text="@string/address"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardParentsDetails"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvParentsDetails1"
+                            android:text="@string/parents_details"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardMedicalCondition"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvMedicalCondition1"
+                            android:text="@string/medical_condition"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardDisciplinaryAction"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDisciplinaryAction1"
+                            android:text="@string/disciplinary_action"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardDocuments"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDocuments1"
+                            android:text="@string/documents"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardFeePayer"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_1sdp">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvFeePayer1"
+                            android:text="@string/fee_payers"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="@style/CustomBlackFont"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            app:srcCompat="@drawable/ic_arrow_forward"
+                            android:scaleType="fitCenter"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.cipolat.superstateview.SuperStateView
+        android:id="@+id/superStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:imageState="@drawable/academia_empty_state"
+        app:setTitleText="@string/whoops"
+        android:visibility="gone"
+        app:setSubTitleText="@string/error_msg"
+        app:titleStyle="@style/erro_title"
+        app:subTitleStyle="@style/erro_sub_title"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="@dimen/_150sdp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.serosoft.academiassu.Widgets.ProfileCircularImage
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:src="@drawable/user_large_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/profilePicHeader" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CustomBlackFont"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/drawerHeaderUserName"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <TextView
+                style="@style/CustomBlackFont"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/drawerHeaderEmail"
+                android:textSize="@dimen/_10sdp"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

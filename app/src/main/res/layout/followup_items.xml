@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPersonalDetails"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAcademyLocation1"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="top|left|center"
+                    android:gravity="top|left|center"
+                    android:text="@string/academy_location"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/colorGrey1"/>
+
+                <TextView
+                    android:id="@+id/tvAcademyLocation"
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="top|left|center"
+                    android:gravity="top|left|center"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_11sdp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+            <View
+                android:background="@color/colorLightGray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:padding="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvName1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/name"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPlannedDate1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/planned_follow_up_date"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvPlannedDate"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvActualDate1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/actual_follow_up_date"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvActualDate"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvNextDate1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/next_follow_up_date"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvNextDate"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvRemark1"
+                        style="@style/CustomGreyFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:text="@string/remark"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvRemark"
+                        style="@style/CustomBlackFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:textSize="@dimen/_11sdp"
+                        android:text=""/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

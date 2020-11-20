@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.serosoft.academiassu.Widgets.CircularTextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:textSize="14dip"
+        android:textStyle="bold">
+
+    </com.serosoft.academiassu.Widgets.CircularTextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LLForDots"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dot_diameter"
+        android:gravity="center"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/ViewForPresentDot"
+            android:visibility="gone"
+            android:layout_width="@dimen/dot_diameter"
+            android:layout_height="@dimen/dot_diameter"
+            android:layout_marginLeft="@dimen/dot_margin"
+            android:layout_marginRight="@dimen/dot_margin"
+            android:background="@drawable/dot_for_present" />
+
+        <View
+            android:id="@+id/ViewForAbsentDot"
+            android:visibility="gone"
+            android:layout_width="@dimen/dot_diameter"
+            android:layout_height="@dimen/dot_diameter"
+            android:layout_marginLeft="@dimen/dot_margin"
+            android:layout_marginRight="@dimen/dot_margin"
+            android:background="@drawable/dot_for_absent" />
+
+        <View
+            android:id="@+id/ViewForOtherDot"
+            android:visibility="gone"
+            android:layout_width="@dimen/dot_diameter"
+            android:layout_height="@dimen/dot_diameter"
+            android:layout_marginLeft="@dimen/dot_margin"
+            android:layout_marginRight="@dimen/dot_margin"
+            android:background="@drawable/dot_for_other" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llFollowup"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="@dimen/_13sdp"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFollowUp"
+            android:text="@string/follow_up_details"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            style="@style/CustomBlackFont"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/folloupdetails"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@color/colorSlateGray"
+        android:layout_width="@dimen/_1sdp"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llApproval"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="@dimen/_13sdp"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvApproval"
+            android:text="@string/approval_details"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            style="@style/CustomBlackFont"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/approval_details"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@color/colorSlateGray"
+        android:layout_width="@dimen/_1sdp"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llExecution"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="@dimen/_13sdp"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvExecution"
+            android:text="@string/execution_details"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            style="@style/CustomBlackFont"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/execution_detail"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

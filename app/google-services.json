@@ -1,0 +1,1183 @@
+{
+  "project_info": {
+    "project_number": "459161975858",
+    "firebase_url": "https://academia-common.firebaseio.com",
+    "project_id": "academia-common",
+    "storage_bucket": "academia-common.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:4d729ed4371667c1",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaArch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:9f2f5d360c617e3c68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaaeic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:99329217bf548c4668d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaaeis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:f0012896f5de6728",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaafricau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:cb199025f40145ff",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaaimk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:fdb2d814f1a7874568d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaait"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:e11680e6bd7ef5dc",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:871e2bf1036621c968d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaaun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:9fa1b7e189427910",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaaus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-75s6q7k116gs865r2gj2m2eh7sfcgb3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiaaus",
+            "certificate_hash": "fe9eba179b029d08f0f7c9c8a563cac716ea85c1"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:2bbe5737e67a9f9068d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiacecos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:39957285d133023868d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiafbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:96c73aacc2cde8e168d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaiiitb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-ie0ltg7q2v9qpo4t9572dhp6nkg5iuth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiaiiitb",
+            "certificate_hash": "6f416df6c61c99ad1f2ce4536e26e17835880c8e"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:e627c63b7c8506f1",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiainifd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:c50eb850f5106c62",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiakl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:3b15f662c112f6e8",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:e540539e8b26d38c",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaparishkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-r53uvofaqjov4illvbil0dfj7q4tr1bd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiaparishkar",
+            "certificate_hash": "1253e0f199ca6242b7d79a081081dbff9980d98d"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:ac7de4c700f6ffde68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiarbu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:80033a1d930e16a4",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiardps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:9b77bce265ca37a568d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiargi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-jin12alibgf5fkr6i7kqmiae5es18euq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiargi",
+            "certificate_hash": "abbb3c6ef35dcf1fc55ab431482ce07554996346"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:fce1f78d5c8cfbac68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaruk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:26d7b33bfc7469bb68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiasis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:ec5836dabfd1b8bd68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiasnjb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:e2b8e0071755118c68d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiassc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:d977c8b55bf30d84",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiassu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-21e19gfep6dumhb3n1jv08094k9chss0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiassu",
+            "certificate_hash": "178ddb13332fa7699fca6b962a12505e37abf08e"
+          }
+        },
+        {
+          "client_id": "459161975858-ipeokcrtnnp8c6hslptsndr6fe7ac8ne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiassu",
+            "certificate_hash": "fe9eba179b029d08f0f7c9c8a563cac716ea85c1"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:9d276e8b17cfd14068d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiastasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:648a3278397390e168d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiasub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:d7332ac808b63a3d",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiatsg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:b611e70b5210427a",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiatsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:26c3172978dbcaf3",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiaugi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-t1h1nlkl1a09glkss37m0pm48bab012n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.serosoft.academiaugi",
+            "certificate_hash": "6ac2bf0d702ea186dccd10e42efc0724052935b6"
+          }
+        },
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:6e120a9502d9e23768d02b",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiavgu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459161975858:android:e0790dfadaa60262",
+        "android_client_info": {
+          "package_name": "com.serosoft.academiavjim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459161975858-8g8mshicl5qfq8ihqm8nuu137nteas62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRbjrsXyrsvSsy40khZ63lMeGTTHBJXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459161975858-5ehdutkp4073onb2j29r2htnfpifht4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459161975858-i7583lpd591d5kqm56plhsuvlvjuti73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.serosoft.academiassc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

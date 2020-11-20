@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/main_menu">
+
+        <item
+            android:id="@+id/home_drawer"
+            android:icon="@drawable/ic_home"
+            android:visible="false"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/myRequest"
+            android:icon="@drawable/ic_my_request"
+            android:title="@string/my_request" />
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/rateReview"
+            android:visible="false"
+            android:icon="@drawable/ic_rate_review"
+            android:title="@string/rate_n_review" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/leave_a_feedback" />
+        <item
+            android:id="@+id/reset_drawer"
+            android:icon="@drawable/ic_password_reset_key"
+            android:title="@string/reset_password" />
+        <item
+            android:id="@+id/switch_student"
+            android:icon="@drawable/ic_switch_student"
+            android:title="@string/switch_student" />
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/ic_share_app"
+            android:title="@string/share_app" />
+        <item
+            android:id="@+id/logout_drawer"
+            android:icon="@drawable/ic_log_out"
+            android:title="@string/logout" />
+    </group>
+</menu>

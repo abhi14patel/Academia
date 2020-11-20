@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sessionName"
+            style="@style/CustomBlackFont1"
+            android:text="Student Name"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:maxLines="2" />
+
+        <ImageView
+            android:id="@+id/greenTick"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/asign_check" />
+
+        <TextView
+            android:id="@+id/attendanceStatus"
+            style="@style/CustomBlackFont"
+            android:text="Present"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/facultyLabel"
+            style="@style/CustomGreyFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/faculty"
+            android:textColor="@color/colorDarkGrayText"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/facultyName"
+            style="@style/CustomBlackFont1"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text="Rajeev Bundel Khand"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:maxLines="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRemark"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvRemark1"
+            style="@style/CustomGreyFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="top|center|left"
+            android:layout_gravity="top|center|left"
+            android:maxLines="1"
+            android:text="@string/remark"
+            android:textColor="@color/colorDarkGrayText"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvRemark"
+            style="@style/CustomBlackFont1"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text=""
+            android:textSize="@dimen/_10sdp"
+            android:gravity="top|center|left"
+            android:layout_gravity="top|center|left" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

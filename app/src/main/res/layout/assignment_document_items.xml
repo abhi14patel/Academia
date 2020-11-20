@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAttachment"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/pdf"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"/>
+
+        <TextView
+            android:id="@+id/tvAttachment"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text=""
+            android:textSize="@dimen/_10sdp"
+            android:gravity="left|center"
+            android:textColor="@color/colorBlack1"
+            android:layout_toLeftOf="@+id/tvDownload"
+            android:layout_toRightOf="@+id/ivAttachment"
+            style="@style/CustomBlackFont1"/>
+
+        <TextView
+            android:id="@+id/tvDownload"
+            android:layout_alignParentRight="true"
+            android:text="@string/download"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone"
+            android:background="@drawable/bg_download"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableLeft="@drawable/ic_download_white"
+            android:layout_centerVertical="true"
+            style="@style/CustomBlackFont"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

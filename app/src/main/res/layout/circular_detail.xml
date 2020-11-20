@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.serosoft.academiassu.Modules.Circular.CirculerDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Title" />
+
+                <TextView
+                    android:id="@+id/circularDate"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGrey"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/descriptionTV"
+                    style="@style/CustomGreyFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Details" />
+
+                <TextView
+                    android:id="@+id/circularDetail"
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="left|center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/docll"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/attachmentTV"
+                    style="@style/CustomGreyFont"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="@string/attachment"/>
+
+                <com.serosoft.academiassu.Widgets.ExpandedListView
+                    android:id="@+id/attachmentsListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:divider="@color/colorGrey"
+                    android:dividerHeight="1dp"
+                    android:fillViewport="true"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

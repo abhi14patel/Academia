@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/headIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/timetable_white_2018"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/sub_info_tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select View Type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorOffWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

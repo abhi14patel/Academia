@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBarLayout"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvItemCount"
+            style="@style/CustomGreyFont"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="left|center"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="false"
+                android:smoothScrollbar="true"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:scrollbars="none"
+                android:fadeScrollbars="true">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.cipolat.superstateview.SuperStateView
+                android:id="@+id/superStateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:imageState="@drawable/academia_empty_state"
+                app:setTitleText="@string/whoops"
+                app:setSubTitleText="@string/no_events_found"
+                app:titleStyle="@style/erro_title"
+                app:subTitleStyle="@style/erro_sub_title"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSort"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_sort"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/bg_circle_wht"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"/>
+
+</RelativeLayout>

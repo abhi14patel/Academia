@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modules.Dashboard.UpdateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/popupBg2">
+
+        <View
+            android:id="@+id/popUpView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/rounded_corner2"/>
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/popUpView"
+            android:layout_alignTop="@+id/popUpView"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/textViewForUpdateTitle"
+            style="@style/CustomBlackFont1"
+            android:gravity="left|center"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/popUpView"
+            android:layout_alignTop="@+id/popUpView"
+            android:layout_margin="@dimen/_8sdp"
+            android:textSize="@dimen/_16sdp"
+            android:layout_toLeftOf="@+id/closeButton"
+            android:textStyle="bold"
+            android:text="New Version!"/>
+        
+        <ImageView
+            android:id="@+id/imageViewForUpdateLogo"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/update_ico"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewForUpdateTitle"/>
+
+        <TextView
+            android:id="@+id/textViewForUpdateDetail"
+            style="@style/CustomBlackFont"
+            android:layout_alignLeft="@+id/popUpView"
+            android:layout_alignRight="@+id/popUpView"
+            android:layout_below="@id/imageViewForUpdateLogo"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="The new version of ACADEMIA is available for Download!"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/CustomBlackFont"
+            android:gravity="left|center"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_alignLeft="@+id/popUpView"
+            android:layout_alignRight="@+id/popUpView"
+            android:layout_below="@id/textViewForUpdateDetail"
+            android:textStyle="bold"
+            android:text="Features:"/>
+
+        <TextView
+            android:id="@+id/textViewForFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/popUpView"
+            android:layout_alignRight="@+id/popUpView"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:textColor="@color/colorBlack"
+            android:maxLines="1000"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/textView2"
+            android:layout_above="@id/linearLayoutForButtons">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutForButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignLeft="@+id/popUpView"
+            android:layout_alignRight="@+id/popUpView"
+            android:layout_alignBottom="@+id/popUpView"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite">
+
+            <Button
+                android:id="@+id/buttonForLater"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@drawable/rounded_corner3"
+                android:textColor="@color/colorBlack"
+                android:text="Later" />
+
+            <Button
+                android:id="@+id/buttonForUpdateNow"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:background="@drawable/rounded_corner4"
+                android:text="Update Now" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

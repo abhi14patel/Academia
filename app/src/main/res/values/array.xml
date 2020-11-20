@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="payerType">
+        <item>Person</item>
+        <item>Corporate</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="payerMode">
+        <item>EFT</item>
+        <item>Debit order</item>
+    </string-array>
+
+    <string-array name="accountType">
+        <item>Select</item>
+        <item>Cheque</item>
+        <item>Savings</item>
+        <item>Transmission</item>
+    </string-array>
+
+</resources>

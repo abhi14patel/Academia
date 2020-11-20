@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c21e2a</color>
+    <color name="colorPrimaryDark">#c21e2a</color>
+    <color name="colorBlue">#34407c</color>
+    <color name="colorAccent">#1E90FF</color>
+    <color name="colorAccentLight">#331E90FF</color>
+    <color name="colorLightGray">#e9ebef</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOffWhite">#f9f9f9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack1">#3D3D3D</color>
+    <color name="colorDarkGrayText">#a7000000</color>
+    <color name="colorSlateGray">#c8c8c8</color>
+    <color name="colorSlateGray1">#F5F5F5</color>
+    <color name="colorSlateGray2">#ECECEC</color>
+    <color name="colorDarkGray">#969696</color>
+    <color name="colorYellow">#F4B400</color>
+    <color name="colorGreenBg">#273043</color>
+    <color name="colorRed">#c21e2a</color>
+    <color name="colorApply">#272F42</color>
+    <color name="colorRedText">#c21e2a</color>
+    <color name="colorBlueTransparent">#3c1e80ef</color>
+    <color name="colorGreen">#273043</color>
+    <color name="colorYellowTrasnparent">#c8f2dd73</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorBackground2">#A8F3F3F3</color>
+    <color name="colorBackground3">#f5f5f5</color>
+
+    <!--activity color code-->
+    <color name="colorExamMark">#40c4ff</color>
+    <color name="colorNotification">#40c4ff</color>
+    <color name="colorAttendance_dark">#F4B400</color>
+    <color name="colorTimetable_dark">#F4B400</color>
+    <color name="colorAssignment_dark">#c21e2a</color>
+    <color name="colorFees_dark">#273043</color>
+    <color name="colorExamMark_dark">#40c4ff</color>
+    <color name="colorNotification_dark">#40c4ff</color>
+    <color name="colorEvents_dark">#273043</color>
+    <color name="colorGallery_dark">#c21e2a</color>
+    <color name="popupBg">#20000000</color>
+    <color name="popupBg2">#70000000</color>
+    <color name="colorUpdatePopUpBackground">#e4f8ff</color>
+    <color name="colorUpdateButton1">#c6d5da</color>
+    <color name="colorUpdateButton2">#159309</color>
+    <color name="colorExamMarkLight">#161E90FF</color>
+
+    <color name="colorForAbsentDate">#FF0000</color>
+    <color name="colorForPresentDate">#32CD32</color>
+    <color name="colorForOtherDate">#F4B400</color>
+    <color name="colorForCurrentDate">#87CEFA</color>
+
+    <color name="colorForClass">#32CD32</color>
+    <color name="colorForHoliday">#8C8BF0</color>
+
+    <color name="colorGalleryCellBackground">#ECECEC</color>
+    <color name="colorGalleryImageButton">#99000000</color>
+
+    <color name="color_dialog_bg">#cc080808</color>
+    <color name="color_selected">#080808</color>
+    <color name="color_unselected">#aaa</color>
+    <color name="color_unselected_thumb">#cc414040</color>
+
+    <color name="colorForFullyPaid">#35a300</color>
+    <color name="colorForPartiallyPaid">#ff6a00</color>
+    <color name="colorForNotPaid">#fd4747</color>
+    <color name="colorForBalanceAmount">#3e6cf5</color>
+
+    <color name="colorForInvoiceBackground">#ececec</color>
+
+    <color name="k_cakendar_page_bg_color">#ffffff</color>
+    <color name="k_cakendar_item_view_bg_color">#ffffff</color>
+    <color name="k_cakendar_toolbar_color">#ffffff</color>
+    <color name="k_cakendar_text_grey">#616161</color>
+    <color name="k_cakendar_text_grey_light">#bdbdbd</color>
+    <color name="brown_700">#5D4037</color>
+    <color name="blue_grey_700">#455A64</color>
+
+    <color name="colorGreylight">#9AAAAAAA</color>
+    <color name="colorGrey">#afafaf</color>
+    <color name="colorGrey1">#898686</color>
+    <color name="colorGrey2">#4c4c4c</color>
+    <color name="colorGrey3">#E6E6E6</color>
+    <color name="colorGrey4">#E7E7E7</color>
+    <color name="colorGrey5">#797575</color>
+
+    <!--Module Colors-->
+    <color name="colorMyCourse">#c21e2a</color>
+    <color name="colorMyRequest">#c21e2a</color>
+    <color name="colorAttendance">#F4B400</color>
+    <color name="colorFees">#273043</color>
+    <color name="colorAssignment">#c21e2a</color>
+    <color name="colorResults">#40c4ff</color>
+    <color name="colorEvents">#273043</color>
+    <color name="colorTimetable">#F4B400</color>
+    <color name="colorCircular">#40c4ff</color>
+    <color name="colorGallery">#c21e2a</color>
+    <color name="colorDrive">#c21e2a</color>
+
+    <color name="colorUnselected">#AAACB2</color>
+
+    <color name="colorBlue1">#0D47A1</color>
+    <color name="colorBlue2">#69B8F7</color>
+    <color name="colorBlue3">#3C477E</color>
+    <color name="colorRed1">#B71C1C</color>
+    <color name="colorRed2">#ff3333</color>
+    <color name="colorRed3">#D0525B</color>
+    <color name="colorRed4">#CA424B</color>
+    <color name="colorGreen1">#1B5E20</color>
+    <color name="colorGreen2">#1d7121</color>
+    <color name="colorGreen3">#49CA4F</color>
+    <color name="colorPink">#E91E63</color>
+    <color name="colorPink1">#880E4F</color>
+    <color name="colorIndigo">#3F51B5</color>
+    <color name="colorIndigo1">#303F9F</color>
+    <color name="colorCyan">#0097A7</color>
+    <color name="colorCyan1">#07464d</color>
+    <color name="colorYellow1">#FFC107</color>
+    <color name="colorYellow2">#96780E</color>
+    <color name="colorYellow3">#E5DE23</color>
+    <color name="colorDownloadBG">#F0F0F0</color>
+    <color name="colorWithdraw">#282828</color>
+    <color name="colorBottom">#EEEEEE</color>
+
+    <color name="colorPending">#ff3333</color>
+    <color name="colorSaved">#ff7e00</color>
+    <color name="colorCompleted">#73be35</color>
+    <color name="colorSubmitted">#73be35</color>
+
+    <color name="colorNeutral">#FF7E00</color>
+    <color name="colorPositive">#73BE35</color>
+    <color name="colorNegative">#FF0000</color>
+
+    <color name="colorFaculty">#38427F</color>
+
+</resources>

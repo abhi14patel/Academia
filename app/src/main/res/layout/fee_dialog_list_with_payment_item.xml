@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutForCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/feeDetailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewForCheckBox"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:visibility="gone"
+                android:src="@drawable/unchecked"/>
+
+            <TextView
+                android:id="@+id/textViewForInvoiceTitle"
+                style="@style/CustomBlackFont1"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Invoice No. : BILL/59594"
+                android:layout_toRightOf="@+id/imageViewForCheckBox"
+                android:layout_toLeftOf="@+id/textViewForInvoiceStatus" />
+
+            <TextView
+                android:id="@+id/textViewForInvoiceStatus"
+                style="@style/CustomBlackFont"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Partly Settled"
+                android:textColor="@color/colorForPartiallyPaid"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feeDetailLL"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewForBillDate"
+                style="@style/CustomGreyFont1"
+                android:gravity="left"
+                android:text="Bill Date: 30/09/2016"
+                android:textColor="@color/colorDarkGrayText"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textViewForDueDate"
+                style="@style/CustomGreyFont1"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="left"
+                android:text="Due Date: 30/12/2019"
+                android:textColor="@color/colorDarkGrayText"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutMiddle"
+            android:layout_marginTop="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewForTALabel"
+                    style="@style/CustomBlackFont"
+                    android:gravity="left|center"
+                    android:layout_gravity="left|center"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/textViewForTotalAmount"
+                    style="@style/CustomBlackFont"
+                    android:gravity="left|center"
+                    android:layout_gravity="left|center"
+                    android:maxLines="1"
+                    android:text="2000"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewForBALabel"
+                    style="@style/CustomBlackFont"
+                    android:gravity="right|center"
+                    android:layout_gravity="right|center"
+                    android:text="@string/balance_amount"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPartAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text=""
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDivider"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:text="/"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/teavtViewForBalanceAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:text="2000"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textColor="@color/colorForBalanceAmount"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivEdit"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/edit_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

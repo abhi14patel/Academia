@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPersonalDetails"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="@dimen/_7sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/CustomGreyFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:text="Type of incident"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/colorBlack1"/>
+
+                    <TextView
+                        android:id="@+id/tvMobileNumber"
+                        style="@style/CustomBlackFont"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_11sdp"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    app:srcCompat="@drawable/ic_arrow_forward"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_gravity="center|right"
+                    android:layout_height="@dimen/_18sdp"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorLightGray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:padding="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvEmail1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/email_id"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvFeePayerType1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/fee_payer_type"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvFeePayerType"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11sdp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

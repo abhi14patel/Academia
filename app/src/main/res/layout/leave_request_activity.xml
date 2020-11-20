@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/appBarLayout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardRequesterDetails"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="@dimen/_3sdp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/expansionHeader"
+                            app:expansion_layout="@id/expansionLayout"
+                            app:expansion_headerIndicator="@id/ivHeaderIndicator"
+                            app:expansion_toggleOnClick="true">
+
+                            <!-- HEADER -->
+                            <RelativeLayout
+                                android:padding="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvRequesterDetails1"
+                                    style="@style/CustomBlackFont"
+                                    android:layout_gravity="top|left|center"
+                                    android:gravity="top|left|center"
+                                    android:textColor="@color/colorGrey1"
+                                    android:textStyle="bold"
+                                    android:text="Requester Details"/>
+
+                                <!-- HEADER INDICATOR -->
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:adjustViewBounds="true"
+                                    android:id="@+id/ivHeaderIndicator"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+                            </RelativeLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"/>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout"
+                            app:expansion_expanded="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/colorWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tvRequesterName1"
+                                            android:text="Requester Name"
+                                            android:gravity="left|center"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:layout_gravity="left|center"
+                                            android:textColor="@color/colorGrey"
+                                            style="@style/CustomGreyFont"/>
+
+                                        <TextView
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:id="@+id/tvRequesterName"
+                                            android:text=""
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tvBatch1"
+                                            android:text="@string/batch"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            android:textColor="@color/colorGrey"
+                                            style="@style/CustomGreyFont"/>
+
+                                        <TextView
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:id="@+id/tvBatch"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:text=""
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tvProgram1"
+                                            android:text="@string/program"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            android:textColor="@color/colorGrey"
+                                            style="@style/CustomGreyFont"/>
+
+                                        <TextView
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:id="@+id/tvProgram"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:text=""
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tvEmailId1"
+                                            android:text="@string/email_id"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            android:textColor="@color/colorGrey"
+                                            style="@style/CustomGreyFont"/>
+
+                                        <TextView
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:id="@+id/tvEmailId"
+                                            android:text=""
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tvMobileNumber1"
+                                            android:text="@string/mobile_number"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            android:textColor="@color/colorGrey"
+                                            style="@style/CustomGreyFont"/>
+
+                                        <TextView
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:id="@+id/tvMobileNumber"
+                                            android:text=""
+                                            android:textSize="@dimen/_10sdp"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardBasicDetails"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="@dimen/_3sdp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvBasicDetails1"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:textColor="@color/colorGrey1"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Basic Details"/>
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"/>
+
+                        <!-- CONTENT -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@color/colorWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvEnteredBy1"
+                                        android:text="Entered By"
+                                        android:gravity="left|center"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:id="@+id/tvEnteredBy"
+                                        android:text=""
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        style="@style/CustomBlackFont1"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvRequestAssignedTo1"
+                                        android:text="Request Assigned To"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:id="@+id/tvRequestAssignedTo"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text=""
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        style="@style/CustomBlackFont1"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvRequestBy1"
+                                        android:text="Request By"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:id="@+id/tvRequestBy"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:text=""
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        style="@style/CustomBlackFont1"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvRequestDate1"
+                                        android:text="Request Date"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:id="@+id/tvRequestDate"
+                                        android:text=""
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        style="@style/CustomBlackFont1"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvRequestReason1"
+                                    android:text="Request Reason/Remark"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:gravity="left|center"
+                                    android:layout_gravity="left|center"
+                                    android:textColor="@color/colorGrey"
+                                    style="@style/CustomGreyFont"/>
+
+                                <EditText
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:id="@+id/etRemark"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:text=""
+                                    android:background="@drawable/bg_et"
+                                    android:hint="Write here"
+                                    android:inputType="textMultiLine"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:gravity="left|top|center"
+                                    android:layout_gravity="left|top|center"
+                                    style="@style/CustomBlackFont1"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvFromDate1"
+                                        android:text="@string/from_date"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:id="@+id/tvFromDate"
+                                        android:background="@drawable/bg_date"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text=""
+                                        android:minLines="1"
+                                        android:paddingLeft="@dimen/date_padding_left"
+                                        android:layout_gravity="left|center"
+                                        android:gravity="left|center"
+                                        android:textSize="@dimen/_10sdp"
+                                        style="@style/CustomGreyFont1"
+                                        android:textColorHint="@color/colorGrey"
+                                        android:layout_height="@dimen/_30sdp"/>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="@dimen/_5sdp"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvFromTime1"
+                                        android:text="From Time"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:id="@+id/tvFromTime"
+                                        android:background="@drawable/bg_et"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text=""
+                                        android:minLines="1"
+                                        android:paddingLeft="@dimen/date_padding_left"
+                                        android:layout_gravity="left|center"
+                                        android:gravity="left|center"
+                                        android:textSize="@dimen/_10sdp"
+                                        style="@style/CustomGreyFont1"
+                                        android:textColorHint="@color/colorGrey"
+                                        android:layout_height="@dimen/_30sdp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvToDate1"
+                                        android:text="@string/to_date"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:id="@+id/tvToDate"
+                                        android:background="@drawable/bg_date"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text=""
+                                        android:minLines="1"
+                                        android:paddingLeft="@dimen/date_padding_left"
+                                        android:layout_gravity="left|center"
+                                        android:gravity="left|center"
+                                        android:textSize="@dimen/_10sdp"
+                                        style="@style/CustomGreyFont1"
+                                        android:textColorHint="@color/colorGrey"
+                                        android:layout_height="@dimen/_30sdp"/>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="@dimen/_3sdp"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvToTime1"
+                                        android:text="To Time"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        android:textColor="@color/colorGrey"
+                                        style="@style/CustomGreyFont"/>
+
+                                    <TextView
+                                        android:id="@+id/tvToTime"
+                                        android:background="@drawable/bg_et"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:text=""
+                                        android:minLines="1"
+                                        android:paddingLeft="@dimen/date_padding_left"
+                                        android:layout_gravity="left|center"
+                                        android:gravity="left|center"
+                                        android:textSize="@dimen/_10sdp"
+                                        style="@style/CustomGreyFont1"
+                                        android:textColorHint="@color/colorGrey"
+                                        android:layout_height="@dimen/_30sdp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvDocuments1"
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="top|left|center"
+                    android:gravity="top|left|center"
+                    android:textColor="@color/colorGrey2"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Documents"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardVoluntaryDocuments"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="@dimen/_3sdp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/expansionHeader1"
+                            app:expansion_layout="@id/expansionLayout1"
+                            app:expansion_headerIndicator="@id/ivHeaderIndicator1"
+                            app:expansion_toggleOnClick="true">
+
+                            <!-- HEADER -->
+                            <RelativeLayout
+                                android:padding="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvVoluntaryDocuments1"
+                                    style="@style/CustomBlackFont"
+                                    android:layout_gravity="top|left|center"
+                                    android:gravity="top|left|center"
+                                    android:textColor="@color/colorGrey1"
+                                    android:textStyle="bold"
+                                    android:text="Voluntary Documents"/>
+
+                                <!-- HEADER INDICATOR -->
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:adjustViewBounds="true"
+                                    android:id="@+id/ivHeaderIndicator1"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+                            </RelativeLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"/>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout1"
+                            app:expansion_expanded="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/colorWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/etDocumentName"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:text=""
+                                        android:background="@drawable/bg_et"
+                                        android:hint="Document Name"
+                                        android:inputType="text"
+                                        android:gravity="left|center"
+                                        android:layout_gravity="left|center"
+                                        style="@style/CustomBlackFont1"/>
+
+                                    <Space
+                                        android:layout_width="@dimen/_3sdp"
+                                        android:layout_height="wrap_content"/>
+
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:background="@drawable/bg_et1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:id="@+id/etDocumentPath"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:text=""
+                                            android:layout_marginLeft="@dimen/_4sdp"
+                                            android:layout_weight="1"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:clickable="false"
+                                            android:hint="Choose Document"
+                                            android:inputType="text"
+                                            android:gravity="left|center"
+                                            android:layout_gravity="left|center"
+                                            style="@style/CustomBlackFont1"/>
+
+                                        <ImageView
+                                            android:id="@+id/ivUpload"
+                                            android:background="@drawable/bg_upload_doc"
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="match_parent"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvAddVolDoc"
+                                    android:background="@drawable/bg_add_doc"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:text="+ Add"
+                                    android:textColor="@color/colorGreen3"
+                                    android:layout_gravity="left|center"
+                                    android:gravity="left|center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold"
+                                    style="@style/CustomGreyFont"
+                                    android:textColorHint="@color/colorGrey"/>
+
+
+                            </LinearLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardMandatoryDocuments"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_3sdp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_3sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/expansionHeader2"
+                            app:expansion_layout="@id/expansionLayout2"
+                            app:expansion_headerIndicator="@id/ivHeaderIndicator2"
+                            app:expansion_toggleOnClick="true">
+
+                            <!-- HEADER -->
+                            <RelativeLayout
+                                android:padding="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvMandatoryDocuments1"
+                                    style="@style/CustomBlackFont"
+                                    android:layout_gravity="top|left|center"
+                                    android:gravity="top|left|center"
+                                    android:textColor="@color/colorGrey1"
+                                    android:textStyle="bold"
+                                    android:text="Mandatory Documents"/>
+
+                                <!-- HEADER INDICATOR -->
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:adjustViewBounds="true"
+                                    android:id="@+id/ivHeaderIndicator2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+                            </RelativeLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <View
+                            android:background="@color/colorLightGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"/>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout2"
+                            app:expansion_expanded="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/colorWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvAddManDoc"
+                                    android:background="@drawable/bg_add_doc"
+                                    android:text="+ Add"
+                                    android:textColor="@color/colorGreen3"
+                                    android:layout_gravity="left|center"
+                                    android:gravity="left|center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold"
+                                    style="@style/CustomGreyFont"
+                                    android:textColorHint="@color/colorGrey"/>
+
+                            </LinearLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="@string/submit"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/bg_submit"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/btnSubmit"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

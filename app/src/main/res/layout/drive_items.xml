@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:background="@drawable/bg_drive_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFolder"
+            android:src="@drawable/folder_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFolderName"
+        style="@style/CustomGreyFont"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_7sdp" />
+</LinearLayout>

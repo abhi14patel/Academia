@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardPersonalDetails"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- HEADER -->
+            <RelativeLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCourse"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_circle_grey"
+                    android:src="@drawable/mycourses_inner" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivHeaderIndicator"
+                    android:layout_toRightOf="@+id/ivCourse"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCourseName"
+                        android:text="PPG Foundations (Philosophy and Public Lab 2019) Demate from the task"
+                        android:layout_gravity="top|left|center"
+                        android:gravity="top|left|center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/colorBlack1"
+                        style="@style/CustomBlackFont1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvCourseCode1"
+                            style="@style/CustomGreyFont"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/course_code"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvCourseCode"
+                            style="@style/CustomBlackFont"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="2"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvFacultyName1"
+                            style="@style/CustomGreyFont"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:text="@string/faculty1"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/tvFacultyName"
+                            style="@style/CustomBlackFont"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|left|center"
+                            android:gravity="top|left|center"
+                            android:maxLines="2"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text=""/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- HEADER INDICATOR -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/ivHeaderIndicator"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_dots_menu" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

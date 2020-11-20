@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_6sdp"
+    android:layout_marginRight="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="false">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorBackground"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/gray_stroke_radius1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDocument"
+                android:background="@drawable/bg_circle_wht"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/pdf"
+                android:padding="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/ivDocument"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDocumentName"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack1"
+                    style="@style/CustomBlackFont1"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:gravity="left|center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack1"
+                    style="@style/CustomBlackFont1"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textSize="@dimen/_10sdp"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorGreen1"
+                    style="@style/CustomBlackFont1"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

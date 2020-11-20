@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar" />
+        <include layout="@layout/sub_info_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/receiptRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sub_info_layout">
+
+        <ListView
+            android:id="@+id/receiptListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:divider="@color/colorSlateGray"
+            android:dividerHeight="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scrollbars="none"
+            />
+
+
+    </RelativeLayout>
+
+    <com.cipolat.superstateview.SuperStateView
+        android:id="@+id/superStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:imageState="@drawable/academia_empty_state"
+        app:setTitleText="@string/whoops"
+        app:setSubTitleText="No Receipt Details Found!"
+        app:titleStyle="@style/erro_title"
+        app:subTitleStyle="@style/erro_sub_title"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_student_background">
+
+    <ListView
+        android:id="@+id/lvDisabilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_below="@+id/lvDisabilities"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_toLeftOf="@+id/tvOk"
+            android:text="Cancel"
+            android:padding="@dimen/_10sdp"
+            android:textStyle="bold"
+            style="@style/CustomBlackFont"/>
+
+        <Space
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:text="Ok"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            style="@style/CustomBlackFont"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

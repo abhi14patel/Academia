@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.serosoft.academiassu.Modules.Fee.InvoiceDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar" />
+        <include
+            android:id="@+id/fee_sub_info_layout"
+            layout="@layout/sub_info_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/feeGroupRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sub_info_layout">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutForTopView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorForInvoiceBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <RelativeLayout
+                android:id="@+id/feeDetailLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewForCheckBox"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:visibility="gone"
+                    android:src="@drawable/unchecked"/>
+
+                <TextView
+                    android:id="@+id/textViewForInvoiceTitle"
+                    style="@style/CustomBlackFont1"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:text="Invoice No. : BILL/59594"
+                    android:layout_toRightOf="@+id/imageViewForCheckBox"
+                    android:layout_toLeftOf="@+id/textViewForInvoiceStatus" />
+
+                <TextView
+                    android:id="@+id/textViewForInvoiceStatus"
+                    style="@style/CustomBlackFont"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Partly Settled"
+                    android:textColor="@color/colorForPartiallyPaid"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewForPDFIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/feeDetailLL"
+                android:background="@null"
+                android:src="@drawable/pdf" />
+
+
+            <TextView
+                android:id="@+id/textViewForBillDate"
+                style="@style/CustomGreyFont1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="left"
+                android:text="Bill Date: 30/09/2016"
+                android:layout_below="@id/feeDetailLL"
+                android:textColor="@color/colorDarkGrayText"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textViewForDueDate"
+                style="@style/CustomGreyFont1"
+                android:gravity="left"
+                android:text="Due Date: 30/12/2019"
+                android:layout_below="@id/textViewForBillDate"
+                android:textColor="@color/colorDarkGrayText"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp"  />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewForDueDate"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewForTALabel"
+                        style="@style/CustomBlackFont"
+                        android:gravity="left|center"
+                        android:layout_gravity="left|center"
+                        android:text="@string/total_amount"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/textViewForTotalAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="left|center"
+                        android:layout_gravity="left|center"
+                        android:maxLines="1"
+                        android:text="2000"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewForBALabel"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:text="@string/balance_amount"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10sdp"/>
+
+
+                    <TextView
+                        android:id="@+id/teavtViewForBalanceAmount"
+                        style="@style/CustomBlackFont"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:maxLines="1"
+                        android:text="2000"
+                        android:textColor="@color/colorForBalanceAmount"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_below="@+id/relativeLayoutForTopView"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:text="Details:"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:gravity="left|center"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="left|center"
+                style="@style/CustomBlackFont1"/>
+
+            <View
+                android:background="@color/colorLightGray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/feeListGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:divider="@color/colorSlateGray"
+            android:layout_below="@id/ll1"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noFeeDetailGroup"
+        style="@style/CustomGreyFont"
+        android:layout_centerInParent="true"
+        android:text="No Fee Detail Found"
+        android:textColor="@color/colorDarkGrayText"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

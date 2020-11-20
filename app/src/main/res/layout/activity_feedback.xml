@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:id="@+id/relativeLayout"
+    android:fitsSystemWindows="false">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CustomBlackFont"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:text="Help us improve!"/>
+
+            <TextView
+                style="@style/CustomGreyFont"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="Send us your feedback &amp; we'll work on it."/>
+
+            <com.serosoft.academiassu.Widgets.RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_15sdp"
+                app:rb_max_count="5"
+                app:rb_empty="@drawable/ic_inactive_star"
+                app:rb_fill="@drawable/ic_active_star"
+                app:rb_click_rating="true"
+                app:rb_touch_rating="true" />
+
+            <LinearLayout
+                android:id="@+id/llFeedback"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CustomBlackFont"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:text="Enter Feedback"/>
+
+                <EditText
+                    android:id="@+id/etFeedback"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Write your comment"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="left|center|top"
+                    android:gravity="left|center|top"
+                    android:padding="@dimen/_5sdp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorBlack"
+                    android:maxLength="255"
+                    android:background="@drawable/bg_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/submit"
+                android:enabled="false"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_submit_disable"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/btnSubmit"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

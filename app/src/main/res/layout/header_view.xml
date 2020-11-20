@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:singleLine="true"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:textAllCaps="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textSize="@dimen/_13sdp"
+        style="@style/CustomWhiteFont" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_close_white_24dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_7sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

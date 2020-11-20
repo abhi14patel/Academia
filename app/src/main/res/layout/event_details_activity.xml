@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sub_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <include layout="@layout/sub_info_layout_event"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/eventDetailRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/sub_info_layout">
+
+        <androidx.core.widget.NestedScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivEvent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/event_img_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tvStartDate1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/start_date"
+                                android:textColor="@color/colorDarkGray" />
+
+                            <TextView
+                                android:id="@+id/tvStartDate"
+                                style="@style/CustomBlackFont"
+                                android:text=""
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textColor="@color/colorDarkGrayText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tvEndDate1"
+                                style="@style/CustomGreyFont"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:text="@string/end_date"
+                                android:textColor="@color/colorDarkGray" />
+
+                            <TextView
+                                android:id="@+id/tvEndDate"
+                                style="@style/CustomBlackFont"
+                                android:text=""
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textColor="@color/colorDarkGrayText" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvEventVenue1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/event_venue"
+                            android:textColor="@color/colorDarkGray" />
+
+                        <TextView
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text=""
+                            android:id="@+id/tvEventVenue"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/colorDarkGrayText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvAdmin1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/event_admin"
+                            android:textColor="@color/colorDarkGray"/>
+
+                        <TextView
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text=""
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:id="@+id/tvAdmin"
+                            android:textColor="@color/colorDarkGrayText" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/eventAttachmentsRL">
+
+                        <TextView
+                            android:id="@+id/tvAttachments1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/attachments"
+                            android:textColor="@color/colorDarkGray" />
+
+                        <com.serosoft.academiassu.Widgets.ExpandedListView
+                            android:id="@+id/attachmentsListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvAttachments1"
+                            android:divider="@color/colorDarkGray"
+                            android:dividerHeight="1dp"
+                            android:fillViewport="true"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvEventDescription1"
+                            style="@style/CustomGreyFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/event_description"
+                            android:textColor="@color/colorDarkGray" />
+
+                        <TextView
+                            android:id="@+id/tvEventDescription"
+                            style="@style/CustomBlackFont"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text=""
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/colorDarkGrayText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noEventDetailFound"
+        style="@style/CustomGreyFont"
+        android:layout_centerInParent="true"
+        android:text="@string/no_details_found"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_student_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/multiple_attendance_dialog_title_background"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="Attendance Details"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textSize="@dimen/_13sdp"
+                style="@style/CustomWhiteFont" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_close_white_24dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorForInvoiceBackground"
+            android:gravity="center"
+            android:text="10/10/2019"
+            android:textColor="@color/colorDarkGrayText"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/listViewForSwitchStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/emptyStateTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="No records found!"
+            android:textColor="@color/colorDarkGrayText"
+            android:background="@color/colorForInvoiceBackground"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>
+

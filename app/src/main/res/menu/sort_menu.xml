@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sortName"
+        android:icon="@drawable/sort_by_name"
+        android:title="@string/sort_by_name" />
+    <item
+        android:id="@+id/sortDate"
+        android:icon="@drawable/calendar_sort"
+        android:title="@string/sort_by_date"/>
+</menu>
